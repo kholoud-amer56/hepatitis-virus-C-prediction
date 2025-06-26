@@ -35,7 +35,7 @@ st.markdown("This app predicts Hepatitis C infection based on blood test results
 # Load Data
 @st.cache_data
 def load_data():
-    file_path = r"D:\blood_test_virus_c_dataset.csv"
+    file_path = "blood_test_virus_c_dataset.csv"
     df = pd.read_csv(file_path)
 
     if 'Category' not in df.columns:
